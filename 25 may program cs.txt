@@ -1,0 +1,60 @@
+using System;
+
+namespace ConsoleApp29
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            User xasay = new User
+            {
+                Name = "Xasay",
+                Surname = "Musayev",
+                Password = "xasay2002",
+                Username = "xasaymusayev",
+                Grade = "High",
+            };
+
+            User ceyhun = new User
+            {
+                Name = "Ceyhun",
+                Surname = "Celilov",
+                Password = "ceyhun2002",
+                Username = "ceyhuncelilov",
+                Grade="Honour",
+            };
+
+            User faiq = new User
+            {
+                Name = "Faiq",
+                Surname = "Resulzade",
+                Password = "faiq2002",
+                Username = "faiqresulzade",
+                Grade="Honour",
+            };
+
+
+            User[] users = { xasay, ceyhun, faiq };
+
+            Console.WriteLine("zehmet olmasa username ve password daxil edin");
+            string username = Console.ReadLine();
+            string password = Console.ReadLine();
+
+            bool flag = false;
+            foreach (var item in users)
+            {
+                if (item.Username == username && item.Password==password)
+                {
+                    item.MyMethod();
+                }
+                
+            }
+            if (!flag)
+            {
+                Console.WriteLine("istifadeci tapilmayib");
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,7 @@
+namespace ConsoleApp29
+{
+    class Student
+    {
+        public string Grade;
+    }
+}

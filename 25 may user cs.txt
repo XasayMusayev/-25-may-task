@@ -1,0 +1,14 @@
+{
+    class User:Student
+    {
+        public string Name;
+        public string Surname;
+        public string Username;
+        public string Password;
+
+        public void MyMethod()
+        {
+            Console.WriteLine($"{Name}  {Surname}, grade = {Grade}");
+        }
+    }
+}
